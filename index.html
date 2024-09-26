@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو الكوفي</title>
+    <link rel="stylesheet" href="kacher.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>منيو الكوفي</h1>
+    </header>
+
+    <nav class="menu-nav">
+        <button class="menu-btn" onclick="showSection('hot-drinks')">المشروبات الساخنة</button>
+        <button class="menu-btn" onclick="showSection('cold-drinks')">المشروبات الباردة</button>
+        <button class="menu-btn" onclick="showSection('desserts')">الحلويات</button>
+    </nav>
+
+    <section id="hot-drinks" class="menu-section visible">
+        <h2>المشروبات الساخنة</h2>
+        <ul>
+            <li><div class="item"><span class="name">قهوة أمريكية</span><span class="price">10 ريال</span></div></li>
+            <li><div class="item"><span class="name">لاتيه</span><span class="price">15 ريال</span></div></li>
+            <li><div class="item"><span class="name">اسبريسو</span><span class="price">12 ريال</span></div></li>
+        </ul>
+    </section>
+
+    <section id="cold-drinks" class="menu-section hidden">
+        <h2>المشروبات الباردة</h2>
+        <ul>
+            <li><div class="item"><span class="name">آيس لاتيه</span><span class="price">18 ريال</span></div></li>
+            <li><div class="item"><span class="name">آيس أمريكانو</span><span class="price">13 ريال</span></div></li>
+            <li><div class="item"><span class="name">فرابتشينو</span><span class="price">20 ريال</span></div></li>
+        </ul>
+    </section>
+
+    <section id="desserts" class="menu-section hidden">
+        <h2>الحلويات</h2>
+        <ul>
+            <li><div class="item"><span class="name">كيك شوكولاتة</span><span class="price">25 ريال</span></div></li>
+            <li><div class="item"><span class="name">كرواسون</span><span class="price">10 ريال</span></div></li>
+            <li><div class="item"><span class="name">دونات</span><span class="price">12 ريال</span></div></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 كوفي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <div class="loading-screen">
+        <div class="loader"></div>
+        <h1>تحميل المتجر...</h1>
+    </div>
+    
+    <script>
+        // محاكاة التحميل
+        window.onload = function() {
+            document.querySelector('.loading-screen').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        };
+    </script>
+    
+
+</body>
+</html>
